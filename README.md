@@ -1,6 +1,6 @@
 # Progressive Web App demo - BCIT FWD - Web Dev 2. 
 
-## Repository for group 4 - Project 1a
+## Repository for group 4 - Project 1b
 
 <ul> 
   <li>Minjin</li>
