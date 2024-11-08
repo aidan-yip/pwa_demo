@@ -1,0 +1,19 @@
+/* root/html */
+
+:root {
+    --primary-color: ;
+    --secondary-color: ;
+    --font-color: ;
+}
+
+body {
+    /* temporary padding to see elements better */
+    padding: 3rem;
+    font-family: "Host Grotesk", sans-serif;
+}
+
+/* typography */
+
+/* images*/
+
+/* components */
