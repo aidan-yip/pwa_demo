@@ -1,165 +1,218 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <link rel="stylesheet" href="styles/normalize-fwd.css" />
-    <link rel="stylesheet" href="styles/styles.css" />
-    <!-- Google fonts -->
-    <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link
-      href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
-      rel="stylesheet"
-    />
 
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<head>
+  <link rel="stylesheet" href="styles/normalize-fwd.css" />
+  <link rel="stylesheet" href="styles/styles.css" />
+  <!-- Google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Host+Grotesk:ital,wght@0,300..800;1,300..800&family=IBM+Plex+Sans+Condensed:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&family=IBM+Plex+Sans:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
+    rel="stylesheet" />
 
-    <script src="scripts/script.js" defer></script>
-    <title>PWA Demo</title>
-  </head>
-  <body>
-    <!-- <section class="test">
-      <h1>Header</h1>
-      <h2>Header</h2>
-      <h3>Header</h3>
-      <h4>Header</h4>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
 
-      <a href="#">link</a>
+  <script src="scripts/script.js" defer></script>
+  <title>PWA Demo</title>
+</head>
+
+<body>
+  <header class="navigation">
+    <nav class="site-nav">
+      <ul class="nav-menu">
+        <li> <a href="#intro">Intro</a>                 </li>
+        <li> <a href="#pros-and-cons">Pros and Cons</a> </li>
+        <li> <a href="#examples">Examples</a>           </li>
+        <li> <a href="#how-they-work">How they work</a> </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section class="intro" id="intro">
+      <h1>
+        Progressive Web Apps
+      </h1>
+      <h2>
+        What is a Progressive Web App?
+      </h2>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti
-        veritatis suscipit accusamus corrupti obcaecati illum. Tempore unde
-        tenetur optio?
+        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Corrupti dicta mollitia illum laborum laboriosam
+        repellat tempore perspiciatis. Illum aut laboriosam officia beatae doloribus ea ut, atque corrupti magnam vitae?
+        Quisquam similique laboriosam voluptas excepturi animi, sed veritatis in corporis soluta quos nobis assumenda ea
+        ab vitae? Ad consectetur possimus obcaecati.
       </p>
 
-      <section>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ab
-        rerum nihil natus cumque blanditiis maiores eaque nisi eligendi magnam
-        sed at minus assumenda placeat praesentium ea quo, ex id optio veniam?
-        Suscipit tenetur qui rerum dolore voluptatibus iste animi.
-      </section>
+    </section>
 
-      <article>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        distinctio earum unde maiores, quaerat dignissimos in excepturi ipsa
-        ullam cum!
-      </article>
-
-        <section class="test">
-      <h1>Header</h1>
-      <h2>Header</h2>
-      <h3>Header</h3>
-      <h4>Header</h4>
-
-      <a href="#">link</a>
+    <!-------------------------------------Minjin---------------------------------------->
+    <section class="pros-and-cons" id="pros-and-cons">
+      <h2>Key Benefits of PWA for Business / Developers / Users</h2>
+      <h3>For Business'</h3>
+      <ol class="p-c-list">
+        <li>
+          <span class="list-header">Enhanced Performance and User Experience</span><br>
+          PWAs look and work like mobile apps but perform like websites, ensuring fast loading and smooth operation.
+          They are easily found by search engines like Google and Bing, which boosts visibility.
+        </li>
+        <li>
+          <span class="list-header">Lower Costs and Increased Efficiency</span><br>
+          PWAs work on any device, saving time and money for businesses. They are easy to develop and update, helping
+          businesses quickly meet customer needs and reduce development costs.
+        </li>
+        <li>
+          <span class="list-header">Greater Reach and Accessibility</span><br>
+          Users can install PWAs directly from a web browser without needing an app store. PWAs can send push
+          notifications, helping businesses stay in touch with their users and increase brand recognition.
+        </li>
+      </ol>
+      <h3>For Developers</h3>
+      <ol class="p-c-list">
+        <li>
+          <span class="list-header">Efficient Development and Deployment</span><br>
+          PWAs leverage modern web technologies like HTML, CSS, and JavaScript, ensuring faster development cycles,
+          easier maintenance, and seamless integration. They offer a shorter time to market and allow developers to
+          quickly iterate on features and deliver timely updates.
+        </li>
+        <li>
+          <span class="list-header">Cross-Platform Compatibility and Flexibility</span><br>
+          PWAs eliminate the need for separate development efforts for different platforms (iOS, Android), providing a
+          consistent experience across devices with a single codebase. They also support headless architecture, allowing
+          for flexible and scalable front-end and back-end separation.
+        </li>
+        <li>
+          <span class="list-header">Cost-Effective and Accessible</span><br>
+          PWAs do not require paid developer accounts on app stores, reducing financial barriers. They also provide a
+          positive developer experience with standardized practices and tools, enabling developers to focus on
+          innovation without worrying about platform-specific intricacies.
+        </li>
+      </ol>
+      <h3>For Users</h3>
+      <ol class="p-c-list">
+        <li>
+          <span class="list-header">Easy Installation and Accessibility</span><br>
+          PWAs offer quick installation directly from the web browser, placing an app icon on the device home screen.
+          Users can also access PWAs via URL without installation.
+        </li>
+        <li>
+          <span class="list-header">Offline Access and Silent Updates</span><br>
+          PWAs function offline using cached data, ensuring seamless use during unstable connections. Updates are
+          automatic, requiring no user intervention.
+        </li>
+        <li>
+          <span class="list-header">Enhanced Security</span><br>
+          PWAs use HTTPS to secure data and protect against security breaches, snooping, and content tampering.
+        </li>
+      </ol>
+      <h2>PWA Disadvantages</h2>
+      <ol class="p-c-list">
+        <li>
+          <span class="list-header">Issues with legacy devices</span><br>
+          Older mobile devices with outdated web browsers may not support PWAs well, leading to potential customer
+          complaints. As web technologies advance, this problem will gradually diminish. Additionally, on iOS, some
+          features may have limitations due to platform restrictions.</li>
+        <li>
+          <span class="list-header">Limited functionality</span><br>
+          PWAs can't access certain important device features like Bluetooth, proximity sensors, and advanced camera
+          controls. JavaScript's single-threaded nature limits performance and battery efficiency, which can impact the
+          overall user experience.</li>
+        <li>
+          <span class="list-header">Potential feature inconsistencies</span> <br>
+          The appearance and functionality of PWAs may not be consistent across different browsers and devices, which
+          can reduce the perceived quality of the application. Native apps provide a more consistent and polished
+          experience, benefiting from direct access to device features and better performance optimization.</li>
+      </ol>
+    </section>
+    <section class="examples" id="examples">
+      <h2>Examples of PWAs</h2>
+      <h3>Uber</h3>
+      <ul class="p-c-list">
+        <li><span class="list-header">Fast and Reliable:    </span> Provides quick load times and smooth user experience even on slow networks.</li>
+        <li><span class="list-header">Low Data Usage:       </span> Optimized for minimal data consumption, making it ideal for areas with limited connectivity.</li>
+        <li><span class="list-header">Offline Functionality:</span> Allows users to check prices and ride information even when offline.</li>
+      </ul>
       <p>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Eum deleniti
-        veritatis suscipit accusamus corrupti obcaecati illum. Tempore unde
-        tenetur optio?
+        Uber transitioned to a PWA to offer a seamless experience to more users, regardless of their network
+        connectivity and device type. The PWA was engineered to perform efficiently even on 2G connections, enhancing
+        accessibility and convenience. This shift led to a significant increase in user engagement, as riders could book
+        rides directly through their web browsers. Consequently, Uber's PWA recorded higher booking numbers and
+        contributed to a 16% year-on-year revenue growth, amounting to $37.2 billion in 2023. This transition
+        particularly benefited users with older devices or slow internet speeds, making the service more inclusive.
       </p>
+      <h3>Starbucks</h3>
+      <ul class="p-c-list">
+        <li><span class="list-header">Offline Capabilities:</span> Users can browse the menu and place orders even without an internet connection,
+          enhancing accessibility.</li>
+        <li><span class="list-header">Fast Loading Times:</span> Optimized for speed, the app provides a quick and smooth user experience, reducing wait
+          times.</li>
+        <li><span class="list-header">Low Data Usage:</span> Efficient data consumption makes it ideal for users with limited or expensive data plans.
+        </li>
+      </ul>
+      <p>
+        Originally, Starbucks operated as a global mobile ordering app. However, the necessity to be accessible in both
+        existing and emerging markets prompted Starbucks to transition to a PWA. This move capitalized on the benefits
+        of progressive web apps, resulting in a 99.84% more lightweight user experience and a 23% increase in order
+        diversity. Consequently, Starbucks' PWA enabled a more efficient and inclusive customer experience, regardless
+        of device or internet speed.
+      </p>
+      <h3>Pinterest</h3>
+      <ul class="p-c-list">
+        <li><span class="list-header">Seamless Browsing:</span> Users can browse and upload pins, manage their boards, and explore content smoothly, just
+          like the native app.</li>
+        <li><span class="list-header">Offline Access:</span> Allows users to view saved pins and boards even without an internet connection.</li>
+        <li><span class="list-header">Enhanced Performance:</span> Faster load times and improved responsiveness, providing a better user experience.
+        </li>
+      </ul>
+      <p>
+        In 2017, Pinterest operated a mobile web app but identified a need to improve the experience for users in
+        low-bandwidth environments and those with limited data plans. To address this, Pinterest transitioned to a PWA,
+        which led to significant benefits. Site engagement increased by 60%, user-generated ad revenue grew by 44%, and
+        the time users spent on the site rose by 40%.
+      </p>
+    </section>
 
-      <section>
-        Lorem ipsum dolor, sit amet consectetur adipisicing elit. Molestias ab
-        rerum nihil natus cumque blanditiis maiores eaque nisi eligendi magnam
-        sed at minus assumenda placeat praesentium ea quo, ex id optio veniam?
-        Suscipit tenetur qui rerum dolore voluptatibus iste animi.
-      </section>
+    <!-------------------------------------Minjin---------------------------------------->
 
-      <article>
-        Lorem, ipsum dolor sit amet consectetur adipisicing elit. Saepe
-        distinctio earum unde maiores, quaerat dignissimos in excepturi ipsa
-        ullam cum!
-      </article> -->
-                  
-<!-------------------------------------Minjin---------------------------------------->
-      <section class="pros_and_cons">
-        <h2>Key Benefits of PWA for Business / Developers / Users</h2>
-          <h3>For Business</h3>
-            <ol>
-              <li>
-                Enhanced Performance and User Experience<br>
-                PWAs look and work like mobile apps but perform like websites, ensuring fast loading and smooth operation. They are easily found by search engines like Google and Bing, which boosts visibility.
-              </li>         
-              <li>
-                Lower Costs and Increased Efficiency<br>
-                PWAs work on any device, saving time and money for businesses. They are easy to develop and update, helping businesses quickly meet customer needs and reduce development costs.
-              </li>
-              <li>
-                Greater Reach and Accessibility<br>
-                Users can install PWAs directly from a web browser without needing an app store. PWAs can send push notifications, helping businesses stay in touch with their users and increase brand recognition.
-              </li>
-            </ol>
-          <h3>For Developers</h3>
-            <ol>
-              <li>
-                Efficient Development and Deployment<br>
-                PWAs leverage modern web technologies like HTML, CSS, and JavaScript, ensuring faster development cycles, easier maintenance, and seamless integration. They offer a shorter time to market and allow developers to quickly iterate on features and deliver timely updates.                
-              </li>         
-              <li>
-                Cross-Platform Compatibility and Flexibility<br> 
-                PWAs eliminate the need for separate development efforts for different platforms (iOS, Android), providing a consistent experience across devices with a single codebase. They also support headless architecture, allowing for flexible and scalable front-end and back-end separation.              
-              </li>
-              <li>
-                Cost-Effective and Accessible<br>
-                PWAs do not require paid developer accounts on app stores, reducing financial barriers. They also provide a positive developer experience with standardized practices and tools, enabling developers to focus on innovation without worrying about platform-specific intricacies.                
-              </li>
-            </ol>
-          <h3>For Users</h3>
-            <ol>
-              <li>
-                Easy Installation and Accessibility<br>
-                PWAs offer quick installation directly from the web browser, placing an app icon on the device home screen. Users can also access PWAs via URL without installation.               
-              </li>         
-              <li>
-                Offline Access and Silent Updates<br>
-                PWAs function offline using cached data, ensuring seamless use during unstable connections. Updates are automatic, requiring no user intervention.
-              </li>
-              <li>
-                Enhanced Security<br>
-                PWAs use HTTPS to secure data and protect against security breaches, snooping, and content tampering.
-              </li>
-            </ol>
-            <h2>PWA Disadvantages</h2>
-            <ol>
-              <li>Issues with legacy devices<br>
-                Older mobile devices with outdated web browsers may not support PWAs well, leading to potential customer complaints. As web technologies advance, this problem will gradually diminish. Additionally, on iOS, some features may have limitations due to platform restrictions.</li>
-              <li>Limited functionality<br>
-                PWAs can't access certain important device features like Bluetooth, proximity sensors, and advanced camera controls. JavaScript's single-threaded nature limits performance and battery efficiency, which can impact the overall user experience.</li>
-              <li>Potential feature inconsistencies
-                The appearance and functionality of PWAs may not be consistent across different browsers and devices, which can reduce the perceived quality of the application. Native apps provide a more consistent and polished experience, benefiting from direct access to device features and better performance optimization.</li> 
-            </ol>
-          </section>
-          <section class="examples">
-            <h2>Examples of PWAs</h2>
-              <h3>Uber</h3>
-                <ul>
-                  <li>Fast and Reliable: Provides quick load times and smooth user experience even on slow networks.</li>
-                  <li>Low Data Usage: Optimized for minimal data consumption, making it ideal for areas with limited connectivity.</li>
-                  <li>Offline Functionality: Allows users to check prices and ride information even when offline.</li>
-                </ul>              
-                <p>
-                  Uber transitioned to a PWA to offer a seamless experience to more users, regardless of their network connectivity and device type. The PWA was engineered to perform efficiently even on 2G connections, enhancing accessibility and convenience. This shift led to a significant increase in user engagement, as riders could book rides directly through their web browsers. Consequently, Uber's PWA recorded higher booking numbers and contributed to a 16% year-on-year revenue growth, amounting to $37.2 billion in 2023. This transition particularly benefited users with older devices or slow internet speeds, making the service more inclusive.
-                </p>
-              <h3>Starbucks</h3>
-                <ul>
-                  <li>Offline Capabilities: Users can browse the menu and place orders even without an internet connection, enhancing accessibility.</li>
-                  <li>Fast Loading Times: Optimized for speed, the app provides a quick and smooth user experience, reducing wait times.</li>
-                  <li>Low Data Usage: Efficient data consumption makes it ideal for users with limited or expensive data plans.</li>
-                </ul>
-                <p>
-                  Originally, Starbucks operated as a global mobile ordering app. However, the necessity to be accessible in both existing and emerging markets prompted Starbucks to transition to a PWA. This move capitalized on the benefits of progressive web apps, resulting in a 99.84% more lightweight user experience and a 23% increase in order diversity. Consequently, Starbucks' PWA enabled a more efficient and inclusive customer experience, regardless of device or internet speed.
-                </p>
-              <h3>Pinterest</h3>
-                <ul>
-                  <li>Seamless Browsing: Users can browse and upload pins, manage their boards, and explore content smoothly, just like the native app.</li>
-                  <li>Offline Access: Allows users to view saved pins and boards even without an internet connection.</li>
-                  <li>Enhanced Performance: Faster load times and improved responsiveness, providing a better user experience.</li>
-                </ul>
-                <p>
-                  In 2017, Pinterest operated a mobile web app but identified a need to improve the experience for users in low-bandwidth environments and those with limited data plans. To address this, Pinterest transitioned to a PWA, which led to significant benefits. Site engagement increased by 60%, user-generated ad revenue grew by 44%, and the time users spent on the site rose by 40%.
-                </p>               
-          </section>
 
-<!-------------------------------------Minjin---------------------------------------->
 
-  </body>
+
+
+
+    <!-------------------------------------Angus---------------------------------------->
+
+    <section class="how-they-work" id="how-they-work">
+      <h2>How PWAs actually work</h2>
+      <p class="p-c-list">
+        At its core, Progressive Web Apps are created with HTML, CSS and Javascript. But what makes them unique is the
+        way that they use caching. Normally when someone access the average website, the content and data from the site
+        are retrieved by making HTTPS requests, but the main benefit of PWA's is that they can be used offline, and they
+        do that through the process of caching the apps resources on the device, so there's no need to make a request to
+        the server.
+      </p>
+      <h3>
+        Service Workers
+      </h3>
+      <p class="p-c-list">
+        The technology that powers PWAs are called service workers. A service worker acts as a powerful background script that enhances the app's performance, reliability, and user experience. It intercepts network requests, enabling the app to cache resources and serve them locally, even when the user is offline or has a weak connection. Service workers also are behind the caching system that allows PWAs to be used offline. There is a 'life cycle' that makes use of different event listeners that each do a specific role to enable caching, background synchronization, and notifications in PWAs. These are the Install event, Activate event, Fetch event, Sync event, and Push event.
+      </p>
+      <h3>
+        Install Event
+      </h3>
+      <p class="p-c-list">
+        The install event in service workers is triggered when the browser installs the service worker. It's commonly used to cache critical resources, also known as 'pre-caching', ensuring the app works offline or loads faster. Developers typically use event.waitUntil() with the Cache API to store files during this phase, preparing the app for future use.
+      </p>
+      <h3>
+        Activate Event
+      </h3>
+      <p class="p-c-list">
+        The activate event in a service worker's life cycle is triggered after installation, once old versions of the service worker are no longer controlling any pages. It is used to clean up outdated caches, prepare the app for resource management, and take control of all clients. This ensures the service worker is fully ready to handle requests efficiently.
+      </p>
+    </section>
+
+
+</body>
+</main>
+
 </html>
