@@ -6,7 +6,9 @@
     --font-color: ;
 }
 
-
+html, body {
+    background-color: #7178ed; 
+}
 
 body {
     /* temporary padding to see elements better */
@@ -78,6 +80,21 @@ main {
     padding: 1rem;
     background-color: #7178ed;
 }
+
+.wrapper {
+    max-width: 80rem;
+    margin: 0 auto;
+    padding: 0 1rem;
+
+}
+
+/* main styles desktop */
+@media (min-width: 80em){
+    main {
+        max-width: 70rem;
+    }
+}
+
 
 /* Intro - mobile styles*/
 .intro {
@@ -151,4 +168,19 @@ main {
 /* How they work styles - mobile */
 .how-they-work h2 {
     text-align: center;
+}
+
+
+
+/* footer */
+footer {
+    margin-top: 3rem;
+    border: #000 1px solid;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: #9bb7f4;
+    padding: 0.5rem 1rem;
+    display: flex;
+    justify-content: center;
+    color: #000000;
 }
