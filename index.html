@@ -30,7 +30,7 @@
     </nav>
   </header>
 
-  <main>
+  <main class="wrapper">
     <section class="intro" id="intro">
       <h1>
         Progressive Web Apps
@@ -184,33 +184,88 @@
 
     <section class="how-they-work" id="how-they-work">
       <h2>How PWAs actually work</h2>
-      <p class="p-c-list">
-        At its core, Progressive Web Apps are created with HTML, CSS and Javascript. But what makes them unique is the
-        way that they use caching. Normally when someone access the average website, the content and data from the site
-        are retrieved by making HTTPS requests, but the main benefit of PWA's is that they can be used offline, and they
-        do that through the process of caching the apps resources on the device, so there's no need to make a request to
-        the server.
-      </p>
+        <div class="p-c-list">
+          <p>
+          At its core, Progressive Web Apps are created with HTML, CSS and Javascript. But what makes them unique is the
+          way that they use caching. Normally when someone access the average website, the content and data from the site
+          are retrieved by making HTTPS requests, but the main benefit of PWA's is that they can be used offline, and they
+          do that through the process of caching the apps resources on the device, so there's no need to make a request to
+          the server.
+          </p>
+        </div>
+
       <h3>
         Service Workers
       </h3>
-      <p class="p-c-list">
-        The technology that powers PWAs are called service workers. A service worker acts as a powerful background script that enhances the app's performance, reliability, and user experience. It intercepts network requests, enabling the app to cache resources and serve them locally, even when the user is offline or has a weak connection. Service workers also are behind the caching system that allows PWAs to be used offline. There is a 'life cycle' that makes use of different event listeners that each do a specific role to enable caching, background synchronization, and notifications in PWAs. These are the Install event, Activate event, Fetch event, Sync event, and Push event.
-      </p>
+        <div class="p-c-list">
+          <p>
+          The technology that powers PWAs are called service workers. A service worker acts as a powerful background script that enhances the app's performance, reliability, and user experience. It intercepts network requests, enabling the app to cache resources and serve them locally, even when the user is offline or has a weak connection. Service workers also are behind the caching system that allows PWAs to be used offline. There is a 'life cycle' that makes use of different event listeners that each do a specific role to enable caching, background synchronization, and notifications in PWAs. These are the Install event, Activate event, Fetch event, Sync event, and Push event.
+          </p>
+        </div>
+
       <h3>
         Install Event
       </h3>
-      <p class="p-c-list">
-        The install event in service workers is triggered when the browser installs the service worker. It's commonly used to cache critical resources, also known as 'pre-caching', ensuring the app works offline or loads faster. Developers typically use event.waitUntil() with the Cache API to store files during this phase, preparing the app for future use.
-      </p>
+        <div class="p-c-list">
+          <p>
+          The install event in service workers is triggered when the browser installs the service worker. It's commonly used to cache critical resources, also known as 'pre-caching', ensuring the app works offline or loads faster. Developers typically use event.waitUntil() with the Cache API to store files during this phase, preparing the app for future use. 
+          <br>
+          This JavaScript code registers a service worker (sw.js) for a web app to enable offline capabilities. It checks for browser support, attempts to register the service worker within the specified scope ("/"), and logs its installation state or any errors that occur during registration.
+          </p>
+
+          <img src="./images/install-event.png" alt="code for the install event of the service worker.">
+
+          <!-- <pre><code>
+            // Register the service worker as a background process to cache the app for offline use.
+            const registerServiceWorker = async () => {
+              // Check if the browser supports service workers
+              if ("serviceWorker" in navigator) {
+                // Register the service worker
+                try {
+                  const registration = await navigator.serviceWorker.register(
+                    // Path to the service worker file that is to be registered
+                    "sw.js",
+                    {
+                      // define the scope of the service worker
+                      scope: "/",
+                    }
+                  );
+                  // Check the state of the service worker and log it to the console
+                  if (registration.installing) {
+                    console.log("Service worker installing");
+                  } else if (registration.waiting) {
+                    console.log("Service worker installed");
+                  } else if (registration.active) {
+                    console.log("Service worker active");
+                  }
+                  // if the registration fails, log it to the console
+                } catch (error) {
+                  console.error(`Registration failed with ${error}`);
+                }
+              }
+            };
+            
+            // Call the registerServiceWorker function on page load
+            registerServiceWorker();
+        </code></pre> -->
+
+        </div>
+
       <h3>
-        Activate Event
+        Caching and Pre-caching
       </h3>
-      <p class="p-c-list">
-        The activate event in a service worker's life cycle is triggered after installation, once old versions of the service worker are no longer controlling any pages. It is used to clean up outdated caches, prepare the app for resource management, and take control of all clients. This ensures the service worker is fully ready to handle requests efficiently.
-      </p>
+        <div class="p-c-list">
+          <p>
+            Caching in a PWA provides local storage for essential assets and resources, acting as an "offline backup" to fetch content when the network is unavailable. Pre-caching prepares these assets in advance, typically during the install event, ensuring they are ready when needed. A common strategy is cache-first, where resources are retrieved from the cache if available; otherwise, the network is used.
+          </p>
+          <img src="./images/caching.png" alt="code for the caching part of the service worker.">
+        </div>
     </section>
 
+
+    <footer>
+      <p>Progressive Web Apps</p>
+    </footer>
 
 </body>
 </main>
