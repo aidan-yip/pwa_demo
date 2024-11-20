@@ -1,19 +1,22 @@
 /* root/html */
 
 :root {
-    --primary-color: ;
-    --secondary-color: ;
-    --font-color: ;
+  --primary-color: ;
+  --secondary-color: ;
+  --font-color: ;
 }
 
-html, body {
-    background-color: #7178ed; 
+html,
+body {
+  background-color: #bee5ff;
+  color: #000000;
+  scroll-behavior: smooth;
 }
 
 body {
-    /* temporary padding to see elements better */
-    /* padding: 1rem; */
-    font-family: "Host Grotesk", sans-serif;
+  /* temporary padding to see elements better */
+  /* padding: 1rem; */
+  font-family: "Host Grotesk", sans-serif;
 }
 
 /* typography */
@@ -23,164 +26,188 @@ h3,
 h4,
 h5,
 h6 {
-    font-family: "Host Grotesk", sans-serif;
+  font-family: "Host Grotesk", sans-serif;
 }
 
-p, li{
-    line-height: 1.5rem;
+h3 {
+  margin-top: 3rem;
 }
 
+p,
+li {
+  line-height: 1.5rem;
+}
 
+.no-background-p {
+  margin-top: 1.5rem;
+}
+
+/* images */
+
+img {
+  border-radius: 1rem;
+}
 
 /* Nav - Mobile Styles */
 .navigation {
-    position: fixed;
-    justify-content: center;
-    z-index: 1;
-    width: 100%;
-    top: 0;
-    left: 0;
-    background-color: transparent;
+  position: fixed;
+  justify-content: center;
+  z-index: 1;
+  width: 100%;
+  top: 0;
+  left: 0;
+  background-color: #ffffff91;
+  backdrop-filter: blur(20px);
+  /* legacy chrome and safari support for backdrop filter */
+  -webkit-backdrop-filter: blur(20px);
+  box-shadow: 0px 0px 25px #0000005e;
 }
 
 .nav-menu {
-    list-style: none;
-    display: flex;
-    gap: 1rem;
-    padding: 0.125rem 0.5rem;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  list-style: none;
+  display: flex;
+  gap: 0.5rem;
+  padding: 0.1rem 0.1rem;
+  padding-left: 1rem;
+  flex-direction: column;
+  justify-content: left;
 }
 
 nav li a {
-    text-decoration: none;
-    border: 1px solid #000;
-    border-radius:5px;
-    padding: 0.1rem 0.8rem;
-    color: #000000;
-    transition: 300ms;
-    background-color: #837f7f63;
-    backdrop-filter: blur(50px);
-    display: inline-block;
+  text-decoration: none;
+  border-radius: 10px;
+  padding: 0.5rem 1rem;
+  color: #000000;
+  transition: 300ms;
+  background-color: #ffffff;
+  box-shadow: 0px 5px 10px #0000001b;
+  display: inline-block;
+}
+
+nav li a:hover {
+  background-color: #2869f4;
+  box-shadow: 0px 5px 10px #3d77fffd;
+  color: #ffffff;
 }
 
 /* Nav - Tablet styles */
 
-@media (min-width: 32em) {
-    .nav-menu{
-        flex-direction: row;
-        justify-content: center;
-    }
+@media (min-width: 50em) {
+  .nav-menu {
+    flex-direction: row;
+    justify-content: center;
+    gap: 1rem;
+    padding: 0.125rem 0.5rem;
+  }
 }
-
 
 /* main styles */
 main {
-    padding: 1rem;
-    background-color: #7178ed;
+  padding: 1rem;
+  background-color: #ffffff;
+  box-shadow: #00000029 0px 0px 25px;
 }
 
 .wrapper {
-    max-width: 80rem;
-    margin: 0 auto;
-    padding: 0 1rem;
-
+  max-width: 80rem;
+  margin: 3rem auto;
+  margin-top: 15rem;
+  padding: 1rem;
+  border-radius: 1rem;
+  border-radius: 2rem;
 }
 
 /* main styles desktop */
-@media (min-width: 80em){
-    main {
-        max-width: 70rem;
-    }
-}
+@media (min-width: 80em) {
+  main {
+    max-width: 70rem;
+  }
 
+  .wrapper {
+    margin-top: 6rem;
+    padding: 3rem;
+  }
+
+  nav li a {
+    padding: 0.5rem 2rem;
+  }
+}
 
 /* Intro - mobile styles*/
 .intro {
-    padding-top: 9rem;
+  padding-top: 0rem;
 }
 
 .intro h1 {
-    text-align: center;
+  text-align: center;
+  font-size: 3rem;
 }
 
 .intro h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .intro p {
-    border: 1px #000 solid;
-    border-radius: 10px;
-    padding: 1rem 1rem;
-    background-color: #9bb7f4;
-}
-
-/* Intro - Tablet styles*/
-@media (min-width: 32em) {
-    .intro{
-        padding-top: 2rem;
-    }
+  border-radius: 1.5rem;
+  padding: 2rem;
+  background-color: #d7efff;
+  box-shadow: 0px 7px 15px #25252534;
+  color: #000000;
 }
 
 /* Intro - Desktop styles */
 
-
-
-
 /* Pros and Cons - Mobile styles */
 .pros-and-cons {
-    padding-top: 2rem;
+  padding-top: 2rem;
 }
 
 .pros-and-cons h2 {
-    text-align: center;
+  text-align: center;
 }
 
 .pros-and-cons li {
-    padding-bottom: 1rem;
+  padding-bottom: 1rem;
 }
 
 .p-c-list {
-    border: #000 solid 1px;
-    border-radius: 10px;
-    padding: 1rem 2rem;
-    background-color: #9bb7f4;
+  border-radius: 1.5rem;
+  padding: 1.5rem;
+  padding-left: 3rem;
+  background-color: #d7efff;
+  box-shadow: 0px 7px 15px #25252534;
+  color: #000000;
 }
 
 .list-header {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 /* Pros and Cons - Desktop styles */
 
-
-
 /* Examples - mobile styles */
-.examples{
-    padding-top: 1rem;
+.examples {
+  padding-top: 1rem;
 }
 
 .examples h2 {
-    text-align: center;
+  text-align: center;
 }
 
 /* How they work styles - mobile */
 .how-they-work h2 {
-    text-align: center;
+  text-align: center;
 }
-
-
 
 /* footer */
 footer {
-    margin-top: 3rem;
-    border: #000 1px solid;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    background-color: #9bb7f4;
-    padding: 0.5rem 1rem;
-    display: flex;
-    justify-content: center;
-    color: #000000;
+  margin-top: 3rem;
+  border-radius: 1.5rem;
+  background-color: #d7efff;
+  padding: 0.5rem 1rem;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0px 7px 15px #25252534;
+  color: #000000;
 }
