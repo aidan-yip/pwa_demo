@@ -173,9 +173,9 @@ main {
 
 .intro p {
   margin-top: 1rem;
-  border-radius: 10px;
+  border-radius: 1.5rem;
   padding: 1rem 1rem;
-  background-color: #9bb7f4;
+  background-color: #d7efff;
 }
 
 .list-bold {
